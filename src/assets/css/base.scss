@@ -1,0 +1,100 @@
+html {
+  font-size: 62.5%;
+  // 這里設置高度100% 可用于實現全屏高度自應佈局
+  height: 100%;
+}
+
+body {
+  min-width: 1280px;
+  // max-width: 1920px;
+  height: 100%;
+  margin: 0 auto;
+  font-family: Microsoft YaHei, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif,
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 1.4rem;
+  color: #333333;
+}
+
+// img layout styles
+img.img-auto {
+  width: 100%;
+  height: auto;
+}
+
+// a layout styles
+a.a-none {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    color: #00b0ff;
+  }
+}
+
+// ul layout styles
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+// 文字
+.text-c-inherit {
+  color: inherit;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 超出範圍顯示樣式
+.overflow-h {
+  overflow: hidden;
+}
+
+.overflow-v {
+  overflow: visible;
+}
+
+// 去掉input type=number時的按鈕
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+// ie下控制palceholdler屬性顏色
+input:-ms-input-placeholder{
+  color: #ccc !important;
+}
+
+// 重置pre標簽字體
+pre {
+  font-family: Microsoft YaHei, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif,
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+// 去掉ie下input刪除按鈕
+input::-ms-clear {
+  display: none;
+}
+input::-ms-reveal {
+  display: none;
+}
